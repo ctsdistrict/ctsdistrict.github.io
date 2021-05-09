@@ -48,14 +48,14 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
 .custom.disconnected div {
     display: none;
 }
-.custom .bumpers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+.custom .bumpers{ /* The bumpers are housed inside a div, so this sizes the div properly and positions it */
     width: 1046px;
     height: 48px;
     position: absolute;
     top:63px;
     left: 284px;
 }
-.custom .bumper{/* These are the actual triggers themselves */
+.custom .bumper{/* These are the actual bumpers themselves */
     width: 315px;
     height: 48px;
     background: url(SNES-LButton-Only-A.png); 
@@ -70,6 +70,9 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
     float: right;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+}
+.custom .bumper.pressed{ [> The '.pressed' class is used for most buttons to signify they've been pressed <]
+    opacity: 1;
 }
 
 /* This bit of code is for the player indicator, which is represented in
