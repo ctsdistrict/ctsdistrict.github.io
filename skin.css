@@ -164,12 +164,12 @@ start and select buttons. */
 /* base class used to simplify the sprite mapping */
 .custom .button{
     position: absolute;
-    width:75px;
-    height:75px;
+    width:158px;
+    height:158px;
 }
 .custom .button.pressed{
-    background: url(drawing/drawing.svg);
-    background-position-x: -1249px;
+    background: url(SNES-AButton-Only-A.png);
+    background-position-x: 0px;
 }
 .custom .a{
     top: 143px;
