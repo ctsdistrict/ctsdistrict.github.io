@@ -49,16 +49,16 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
     display: none;
 }
 .custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
-    width: 1600px;
-    height: 800px;
+    width: 759px;
+    height: 34px;
     position: absolute;
-    left: 0px;
+    left: 104px;
 }
 .custom .trigger{/* These are the actual triggers themselves */
-    width: 1600px;
-    height: 800px;
-    background: url(SNES-LButton-A.png); 
-    background-position: 0px 0px;
+    width: 211px;
+    height: 34px;
+    background: url(drawing/drawing.svg); 
+    background-position: -967px 0px;
     background-repeat: no-repeat;
     opacity: 0;
 }
@@ -137,7 +137,7 @@ start and select buttons. */
     top: 214px;
     left: 358px;
 }
-/* Setting the size and CSS sprite for the start and select buttons */
+/* Setting the size and CSS sprite for the start adn select buttons */
 .custom .back, .custom .start{
     width: 71.5px;
     height: 61.5px;
