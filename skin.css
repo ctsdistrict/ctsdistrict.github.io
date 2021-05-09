@@ -61,7 +61,7 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
     background: url(SNES-LButton-Only-A.png); 
     background-position: 0px 0px;
     background-repeat: no-repeat;
-    opacity: 0;
+    opacity: 1;
 }
 .custom .bumper.left{ 
     float: left;
