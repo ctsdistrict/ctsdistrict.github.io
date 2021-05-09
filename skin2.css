@@ -1,5 +1,5 @@
 /*BEGIN PS3 Controller Styling*/
-.controller.ps {
+.controller.custom {
     background: url(SNES-Controller-B.png);
     height: 800px;
     width: 1600px;
@@ -7,21 +7,21 @@
         margin-top: -400px;
 }
 
-.ps.disconnected {
+.custom.disconnected {
     background: url(SNES-Controller-B-All.png);
 }
 
-.ps.disconnected div {
+.custom.disconnected div {
     display: none;
 }
 
-.ps .bumper {
+.custom .bumper {
     width:315px;
     height: 48px;
     opacity: 0;
 }
 
-.ps .bumpers {
+.custom .bumpers {
     position: absolute;
     width: 1046px;
     height: 48px;
@@ -29,21 +29,21 @@
     top: 63px;
 }
 
-.ps .bumper.pressed {
+.custom .bumper.pressed {
     opacity: 1;
 }
 
-.ps .bumper.left {
+.custom .bumper.left {
     background: url(SNES-LButton-Only-A.png);
     float: left;
 }
 
-.ps .bumper.right {
+.custom .bumper.right {
     background: url(SNES-RButton-Only-A.png);
     float: right;
 }
 
-.ps .quadrant {
+.custom .quadrant {
     position: absolute;
     background: url(ps3-assets/player-n.png);
     height: 17px;
@@ -52,23 +52,23 @@
     left: 240px;
 }
 
-.ps .p0 {
+.custom .p0 {
     background-position: 0 -6px;
 }
 
-.ps .p1 {
+.custom .p1 {
     background-position: 0 -28px;
 }
 
-.ps .p2 {
+.custom .p2 {
     background-position: 0 -49px;
 }
 
-.ps .p3 {
+.custom .p3 {
     background-position: 0 -70px;
 }
 
-.ps .arrows {
+.custom .arrows {
     position: absolute;
     width: 205px;
     height: 19px;
@@ -76,29 +76,29 @@
     left: 291px;
 }
 
-.ps .back, .ps .start {
+.custom .back, .custom .start {
     background: url(ps3-assets/menus.png);
     width: 34px;
     height: 19px;
 }
 
-.ps .back.pressed, .ps .start.pressed {
+.custom .back.pressed, .custom .start.pressed {
     background-position-y: -21px;
     margin-top: 2px;
 }
 
-.ps .back {
+.custom .back {
     float: left;
     width: 38px;
 }
 
-.ps .start {
+.custom .start {
     float: right;
     width: 36px;
     background-position: 37px 0;
 }
 
-.ps .abxy {
+.custom .abxy {
     position: absolute;
     width: 204px;
     height: 205px;
@@ -106,41 +106,41 @@
     left: 538px;
 }
 
-.ps .button {
+.custom .button {
     position: absolute;
     width: 62px;
     height: 62px;
     background: url(ps3-assets/face-buttons.png);
 }
 
-.ps .button.pressed {
+.custom .button.pressed {
     background-position-y: -64px;
     margin-top: 5px;
 }
 
-.ps .a {
+.custom .a {
     background-position: 62px 0;
     top: 142px;
     left: 71px;
 }
 
-.ps .b {
+.custom .b {
     background-position: 125px 0;
     top: 71px;
     right: 0px;
 }
 
-.ps .x {
+.custom .x {
     background-position: 0 0;
     top: 71px;
 }
 
-.ps .y {
+.custom .y {
     background-position: -63px 0;
     left: 71px;
 }
 
-.ps .sticks {
+.custom .sticks {
     position: absolute;
     width: 364px;
     height: 105px;
@@ -148,32 +148,32 @@
     left: 210px;
 }
 
-.ps .stick {
+.custom .stick {
     position: absolute;
     background: url(ps3-assets/thumbs.png);
     height: 105px;
     width: 105px;
 }
 
-.ps .stick.pressed.left {
+.custom .stick.pressed.left {
     background-position-x: -106px;
 }
 
-.ps .stick.pressed.right {
+.custom .stick.pressed.right {
     background-position-x: -211px;
 }
 
-.ps .stick.left {
+.custom .stick.left {
     top: 0;
     left: 0;
 }
 
-.ps .stick.right {
+.custom .stick.right {
     top: calc(100% - 105px);
     left: calc(100% - 105px);
 }
 
-.ps .dpad {
+.custom .dpad {
     position: absolute;
     width: 140px;
     height: 132px;
@@ -181,92 +181,92 @@
     left: 74px;
 }
 
-.ps .face {
+.custom .face {
     background: url(ps3-assets/dpad.png);
     position: absolute;
 }
 
-.ps .face.up, .ps .face.down {
+.custom .face.up, .custom .face.down {
     width: 38px;
     height: 52px;
 }
 
-.ps .face.left, .ps .face.right {
+.custom .face.left, .custom .face.right {
     width: 52px;
     height: 38px;
 }
 
-.ps .face.up {
+.custom .face.up {
     left: 50px;
     top: 0;
     background-position: 92px 0px;
 }
 
-.ps .face.down {
+.custom .face.down {
     left: 50px;
     top: 79px;
     background-position: 131px 0;
 }
 
-.ps .face.left {
+.custom .face.left {
     top: 47px;
     left: 0;
     background-position: 0px 0;
 }
 
-.ps .face.right {
+.custom .face.right {
     top: 47px;
     right: 0px;
     background-position: 53px 0;
 }
 
-.ps .face.pressed {
+.custom .face.pressed {
     margin-top: 5px;
     background-position-y: 52px;
 }
 
-.ps.half {
+.custom.half {
     margin-top: -279px;
 }
 
 /*END PS3 Controller Styling*/
 
 /*BEGIN PS3 White Controller Styling*/
-.controller.ps.white {
+.controller.custom.white {
     background-image: url(ps3-white-assets/base.png);
 }
 
-.ps.white.disconnected {
+.custom.white.disconnected {
     background-image: url(ps3-white-assets/base-disconnect.png);
 }
 
 
-.ps.white .trigger {
+.custom.white .trigger {
     background-image: url(ps3-white-assets/triggers.png);
 }
 
 
-.ps.white .bumper {
+.custom.white .bumper {
     background-image: url(ps3-white-assets/bumpers.png);
 }
 
-.ps.white .quadrant {
+.custom.white .quadrant {
     background-image: url(ps3-white-assets/player-n.png);
 }
 
-.ps.white .back, .ps.white .start {
+.custom.white .back, .custom.white .start {
     background-image: url(ps3-white-assets/menus.png);
 }
 
-.ps.white .button {
+.custom.white .button {
     background-image: url(ps3-white-assets/face-buttons.png);
 }
 
-.ps.white .stick {
+.custom.white .stick {
     background-image: url(ps3-white-assets/thumbs.png);
 }
 
-.ps.white .face {
+.custom.white .face {
     background-image: url(ps3-white-assets/dpad.png);
 }
 
