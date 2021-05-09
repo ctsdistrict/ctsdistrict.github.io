@@ -1,296 +1,273 @@
-/*
--How to use Custom CSS for the Gamepad Viewer-
-http://mrmcpowned.com/gamepad
-Enabling a custom CSS is as easy as adding &css=[url to css file]
-to the end of the url like so:
-http://mrmcpowned.com/gamepad?p=1&css=https://gist.github.com/anonymous/526491dc02014099cd14/raw/d7bb0477ba984f794497f3f0f82cb33484dc7889/ps3.css
-If you're going to be using custom CSS for the gamepad viewer
-to design your own skin, we're assuming you have some sort of
-basic knowledge on how CSS works. I'd also suggest uploading
-your custom CSS to GitHub's gist as you can easily get the
-direct link for the file by copying the link address on the
-"Raw" button at the top right of the code.
-NOTE: If you're using gist, MAKE SURE TO NAME YOUR CSS FILE!
-It doesn't matter what you call it, so long as it ends in .css
-else the site won't read it and think it's just a plain text.
-Each CSS entry must be preceded by '.custom' since that's the 
-hardcoded class for a custom style. It doesn't make sense to 
-change this as you can only have one custom skin loaded at a time.
-If you're using images, they have to be uploaded to an image host of
-your choice. Personally, I'd go with Imgur since it's simple to upload
-and get the direct URL of the image. None of the images in this example
-will load because they're pointing to a location relative of the css 
-files, since this is normally in the main CSS file of the site.
-The following is a copy of the code used for displaying the PS3 controller
-skin on the Gamepad viewer. You can scroll below and read the comments to
-get an understanding of how the styling works and whatnot. Happy skinning!
-P.S. If you use this tool often and would like to 'buy me a coffee' you can
-do so via my Imraising page: https://imraising.tv/u/mrmcpowned
-*/
-
 /*BEGIN PS3 Controller Styling*/
-/*This class defines the base attributes of the skin*/
-.controller.custom{
-    background: url(SNES-Controller-B.png); 
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    width: 1600px;
+.controller.custom {
+    background: url(SNES-Controller-B.png);
     height: 800px;
-    margin-left: -800px;
-    margin-top: -400px;
+    width: 1600px;
+        margin-left: -800px;
+        margin-top: -400px;
 }
+
 .custom.disconnected {
-    background: url(SNES-Controller-B-All.png); 
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
+    background: url(SNES-Controller-B-All.png);
 }
-/* This hides the controller's button when disconnected so only the background image remains */ 
+
 .custom.disconnected div {
     display: none;
 }
-.custom .bumpers{ /* The bumpers are housed inside a div, so this sizes the div properly and positions it */
-    width: 1046px;
+
+.custom .bumper {
+    width:315px;
     height: 48px;
-    position: absolute;
-    top:63px;
-    left: 284px;
-}
-.custom .bumper{/* These are the actual bumpers themselves */
-    width: 315px;
-    height: 48px;
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
     opacity: 0;
 }
-.custom .bumper.left{ 
-    background: url(SNES-LButton-Only-A.png); 
-    float: left;
+
+.custom .bumpers {
+    position: absolute;
+    width: 1046px;
+    height: 48px;
+    left: 284px;
+    top: 63px;
 }
-.custom .bumper.right{
-    background: url(SNES-RButton-Only-A.png); 
-    float: right;
-}
-.custom .bumper.pressed{ [> The '.pressed' class is used for most buttons to signify they've been pressed <]
+
+.custom .bumper.pressed {
     opacity: 1;
 }
-/* This bit of code is for the player indicator, which is represented in
-quandrants on the xbox controller. That's note what it's called on the
-PS3 controller but it'd be pointless for me to change the HTML for 
-something as pedantic as a name. */
-.custom .quadrant{
-    position: absolute;
-    height: 16px;
-    width: 64px;
-    top: 0px;
-    left: 0px;
-}
-/* Since the player indicator is just a CSS sprite, we change the 
-position of the background to match the player number.
-NOTE: Player orderin starts at 0, so p0 = Player 1 */
-.custom .p0{
-    background-position: 0 0px;
-}
-.custom .p1{
-    background-position: 0 -16px;
-}
-.custom .p2{
-    background-position: 0 -32px;
-}
-.custom .p3{
-    background-position: 0 -48px;
-}
-/* This is to size and position the containing div for the 
-start and select buttons. */
-.custom .arrows{
-    position: absolute;
-    width: 336px;
-    height:137px;
-    top: 415px;
-    left: 640px;
-}
-/* Setting the size and CSS sprite for the start and select buttons */
-.custom .back, .custom .start{
-    width: 138px;
-    height: 137px;
-}
-.custom .back.pressed, .custom .start.pressed{
-    background: url(SNES-SelectButton-Only-A.png);
-    background-position: 0px 0px;
-}
-.custom .back{
+
+.custom .bumper.left {
+    background: url(SNES-LButton-Only-A.png);
     float: left;
 }
-.custom .start{
+
+.custom .bumper.right {
+    background: url(SNES-RButton-Only-A.png);
     float: right;
 }
-/* Positioning and size of the container for the face buttons */
-.custom .abxy{
+
+.custom .quadrant {
     position: absolute;
-    width: 259px;
-    height: 218px;
-    top: 105px;
-    left: 633px;
+    background: url(ps3-assets/player-n.png);
+    height: 17px;
+    width: 111px;
+    top: 140px;
+    left: 240px;
 }
-/* base class used to simplify the sprite mapping */
-.custom .button{
+
+.custom .p0 {
+    background-position: 0 -6px;
+}
+
+.custom .p1 {
+    background-position: 0 -28px;
+}
+
+.custom .p2 {
+    background-position: 0 -49px;
+}
+
+.custom .p3 {
+    background-position: 0 -70px;
+}
+
+.custom .arrows {
     position: absolute;
-    width:158px;
-    height:158px;
+    width: 205px;
+    height: 19px;
+    top: 250px;
+    left: 291px;
 }
-.custom .button.pressed{
-    background: url(SNES-AButton-Only-A.png);
-    background-position-x: 0px;
+
+.custom .back, .custom .start {
+    background: url(ps3-assets/menus.png);
+    width: 34px;
+    height: 19px;
 }
-.custom .a{
-    top: 143px;
-    left: 92px;
+
+.custom .back.pressed, .custom .start.pressed {
+    background-position-y: -21px;
+    margin-top: 2px;
 }
-.custom .b{
+
+.custom .back {
+    float: left;
+    width: 38px;
+}
+
+.custom .start {
+    float: right;
+    width: 36px;
+    background-position: 37px 0;
+}
+
+.custom .abxy {
+    position: absolute;
+    width: 204px;
+    height: 205px;
+    top: 156px;
+    left: 538px;
+}
+
+.custom .button {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    background: url(ps3-assets/face-buttons.png);
+}
+
+.custom .button.pressed {
+    background-position-y: -64px;
+    margin-top: 5px;
+}
+
+.custom .a {
+    background-position: 62px 0;
+    top: 142px;
+    left: 71px;
+}
+
+.custom .b {
+    background-position: 125px 0;
     top: 71px;
     right: 0px;
 }
-.custom .x{
+
+.custom .x {
+    background-position: 0 0;
     top: 71px;
 }
-.custom .y{
-    left: 92px;
+
+.custom .y {
+    background-position: -63px 0;
+    left: 71px;
 }
-/* Analog sticks follow the same principles as the triggers in terms of positioning
-Note that the rotation of the sticks in hard coded with javascript, so it applies 
-the CSS inline. */
-.custom .sticks{
+
+.custom .sticks {
     position: absolute;
     width: 364px;
     height: 105px;
     top: 328px;
     left: 210px;
 }
-.custom .stick{
+
+.custom .stick {
     position: absolute;
-    height:105px;
+    background: url(ps3-assets/thumbs.png);
+    height: 105px;
     width: 105px;
 }
-.custom .stick.pressed.left{
+
+.custom .stick.pressed.left {
     background-position-x: -106px;
 }
-.custom .stick.pressed.right{
+
+.custom .stick.pressed.right {
     background-position-x: -211px;
 }
-.custom .stick.left{
+
+.custom .stick.left {
     top: 0;
     left: 0;
 }
-.custom .stick.right{
+
+.custom .stick.right {
     top: calc(100% - 105px);
     left: calc(100% - 105px);
 }
-/* Dpad possitioning and sizing */
-.custom .dpad{
-    position: absolute;
-    width: 146px;
-    height: 146px;
-    top: 142px;
-    left: 133px;
-}
-.custom .face{
-    position: absolute;
-}
-.custom .face.up, .custom .face.down{
-    width: 33.5px;
-    height: 34px;
-}
-.custom .face.left, .custom .face.right{
-    width: 34px;
-    height: 33.5px;
-}
-.custom .face.up{
-    left: 56px;
-    top: 0;
-    background-position: 92px 0px;
-}
-.custom .face.down{
-    left: 56px;
-    top: 112px;
-    background-position: 131px 0;
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-}
-.custom .face.left{
-    top: 56px;
-    left: 0;
-    background-position: 0px 0;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-.custom .face.right{
-    top: 56px;
-    right: 0px;
-    background-position: 53px 0;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-.custom .face.pressed{
-    background: url(drawing/drawing.svg);
-    background-position-x: -1323px;
-}
-/* NOTE: You NEED to set this to exactly half the height of what is listed 
-for '.controller.custom' so when your skin is activated via player selection
-parameters (e.g. http://mrmcpowned.com/gamepad?p=1) it will be correctly
-centered on screen. */
-.custom.half{
-    margin-top: -800px;
-}
-/* The following entries are empty because I haven't used them yet, but they
-exist for the purpose of displaying a fightstick. Since fightsticks have 
-the left and right triggers and digital buttons, there are separate 
-html items that allow the triggers to be shown as button presses isntead of
-an opacity setting */
-.custom .trigger-button.left{
-    
-}
-.custom .trigger-button.right{
-    
-}
-.custom .trigger-button.left.pressed{
-    
-}
-.custom .trigger-button.right.pressed{
-    
-}
-/* This is where the fight stick CSS would go. The ideal way of 
-showing the input would be to use an image sprite of a fight stick in
-all 8 positions, and change it according to the inputs. The classes 
-themselves are fairly self explanatory. */
-.fstick{
+
+.custom .dpad {
     position: absolute;
     width: 140px;
     height: 132px;
     top: 192px;
     left: 74px;
 }
-.fstick.up{
-  
+
+.custom .face {
+    background: url(ps3-assets/dpad.png);
+    position: absolute;
 }
-.fstick.down{
-  
+
+.custom .face.up, .custom .face.down {
+    width: 38px;
+    height: 52px;
 }
-.fstick.left{
-  
+
+.custom .face.left, .custom .face.right {
+    width: 52px;
+    height: 38px;
 }
-.fstick.right{
-  
+
+.custom .face.up {
+    left: 50px;
+    top: 0;
+    background-position: 92px 0px;
 }
-.fstick.up.right{
-  
+
+.custom .face.down {
+    left: 50px;
+    top: 79px;
+    background-position: 131px 0;
 }
-.fstick.up.left{
-  
+
+.custom .face.left {
+    top: 47px;
+    left: 0;
+    background-position: 0px 0;
 }
-.fstick.down.right{
-  
+
+.custom .face.right {
+    top: 47px;
+    right: 0px;
+    background-position: 53px 0;
 }
-.fstick.down.left{
-  
+
+.custom .face.pressed {
+    margin-top: 5px;
+    background-position-y: 52px;
+}
+
+.custom.half {
+    margin-top: -279px;
 }
 
 /*END PS3 Controller Styling*/
+
+/*BEGIN PS3 White Controller Styling*/
+.controller.custom.white {
+    background-image: url(ps3-white-assets/base.png);
+}
+
+.custom.white.disconnected {
+    background-image: url(ps3-white-assets/base-disconnect.png);
+}
+
+
+.custom.white .trigger {
+    background-image: url(ps3-white-assets/triggers.png);
+}
+
+
+.custom.white .bumper {
+    background-image: url(ps3-white-assets/bumpers.png);
+}
+
+.custom.white .quadrant {
+    background-image: url(ps3-white-assets/player-n.png);
+}
+
+.custom.white .back, .custom.white .start {
+    background-image: url(ps3-white-assets/menus.png);
+}
+
+.custom.white .button {
+    background-image: url(ps3-white-assets/face-buttons.png);
+}
+
+.custom.white .stick {
+    background-image: url(ps3-white-assets/thumbs.png);
+}
+
+.custom.white .face {
+    background-image: url(ps3-white-assets/dpad.png);
+}
+
+/*END PS3 White Controller Styling*/
