@@ -73,7 +73,6 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
 .custom .bumper.pressed{ [> The '.pressed' class is used for most buttons to signify they've been pressed <]
     opacity: 1;
 }
-
 /* This bit of code is for the player indicator, which is represented in
 quandrants on the xbox controller. That's note what it's called on the
 PS3 controller but it'd be pointless for me to change the HTML for 
