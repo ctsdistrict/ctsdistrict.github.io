@@ -38,7 +38,7 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
 /*BEGIN PS3 Controller Styling*/
 /*This class defines the base attributes of the skin*/
 .controller.custom{
-    background: url(SNES-Controller-B.png); 
+    background: url(SNES-Controller-C.png); 
     background-repeat: no-repeat;
     background-position: 0px 0px;
     width: 1600px;
@@ -47,7 +47,7 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
     margin-top: -400px;
 }
 .custom.disconnected {
-    background: url(SNES-Controller-B.png); 
+    background: url(SNES-Controller-C.png); 
     background-position: 0px 0px;
     background-repeat: no-repeat;
 }
