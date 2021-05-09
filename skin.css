@@ -58,18 +58,17 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
 .custom .bumper{/* These are the actual bumpers themselves */
     width: 315px;
     height: 48px;
-    background: url(SNES-LButton-Only-A.png); 
     background-position: 0px 0px;
     background-repeat: no-repeat;
     opacity: 0;
 }
 .custom .bumper.left{ 
+    background: url(SNES-LButton-Only-A.png); 
     float: left;
 }
 .custom .bumper.right{
+    background: url(SNES-RButton-Only-A.png); 
     float: right;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
 }
 .custom .bumper.pressed{ [> The '.pressed' class is used for most buttons to signify they've been pressed <]
     opacity: 1;
@@ -81,43 +80,43 @@ PS3 controller but it'd be pointless for me to change the HTML for
 something as pedantic as a name. */
 .custom .quadrant{
     position: absolute;
-    height: 17px;
-    width: 111px;
-    top: 140px;
-    left: 240px;
+    height: 16px;
+    width: 64px;
+    top: 0px;
+    left: 0px;
 }
 /* Since the player indicator is just a CSS sprite, we change the 
 position of the background to match the player number.
 NOTE: Player orderin starts at 0, so p0 = Player 1 */
 .custom .p0{
-    background-position: 0 -6px;
+    background-position: 0 0px;
 }
 .custom .p1{
-    background-position: 0 -28px;
+    background-position: 0 -16px;
 }
 .custom .p2{
-    background-position: 0 -49px;
+    background-position: 0 -32px;
 }
 .custom .p3{
-    background-position: 0 -70px;
+    background-position: 0 -48px;
 }
 /* This is to size and position the containing div for the 
 start and select buttons. */
 .custom .arrows{
     position: absolute;
-    width: 176px;
-    height: 62px;
-    top: 214px;
-    left: 358px;
+    width: 336px;
+    height:137px;
+    top: 415px;
+    left: 640px;
 }
-/* Setting the size and CSS sprite for the start adn select buttons */
+/* Setting the size and CSS sprite for the start and select buttons */
 .custom .back, .custom .start{
-    width: 71.5px;
-    height: 61.5px;
+    width: 138px;
+    height: 137px;
 }
 .custom .back.pressed, .custom .start.pressed{
-    background: url(drawing/drawing.svg);
-    background-position: -1177.5px 0px;
+    background: url(SNES-SelectButton-Only-A.png);
+    background-position: 0px 0px;
 }
 .custom .back{
     float: left;
