@@ -49,7 +49,7 @@ do so via my Imraising page: https://imraising.tv/u/mrmcpowned
     display: none;
 }
 .custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
-    width: 1330px;
+    width: 1046px;
     height: 48px;
     position: absolute;
     top:63px;
