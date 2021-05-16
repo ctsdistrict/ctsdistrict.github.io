@@ -46,56 +46,56 @@
 .custom .quadrant {
     position: absolute;
     background: url(ps3-assets/player-n.png);
-    height: 17px;
-    width: 111px;
-    top: 140px;
+    height: 72px;
+    width: 152px;
+    top: 176px;
     left: 240px;
 }
 
 .custom .p0 {
-    background-position: 0 -6px;
+    background-position: 0 0px;
 }
 
 .custom .p1 {
-    background-position: 0 -28px;
+    background-position: 0 -40px;
 }
 
 .custom .p2 {
-    background-position: 0 -49px;
+    background-position: 0 -80px;
 }
 
 .custom .p3 {
-    background-position: 0 -70px;
+    background-position: 0 -120px;
 }
 
 .custom .arrows {
     position: absolute;
-    width: 205px;
-    height: 19px;
-    top: 250px;
-    left: 291px;
+    width: 336px;
+    height: 137px;
+    top: 415px;
+    left: 640px;
 }
 
 .custom .back, .custom .start {
     background: url(ps3-assets/menus.png);
-    width: 34px;
-    height: 19px;
+    width: 138px;
+    height: 137px;
 }
 
 .custom .back.pressed, .custom .start.pressed {
-    background-position-y: -21px;
-    margin-top: 2px;
+    background-position-y: 0px;
+    margin-top: 0px;
 }
 
 .custom .back {
     float: left;
-    width: 38px;
+    width: 138px;
 }
 
 .custom .start {
     float: right;
-    width: 36px;
-    background-position: 37px 0;
+    width: 138px;
+    background-position: 98px 0;
 }
 
 .custom .abxy {
