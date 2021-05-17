@@ -77,25 +77,21 @@
 }
 
 .custom .back, .custom .start {
-    background: url(ps3-assets/menus.png);
-    width: 138px;
+    background: url(SNES-SelectButton-Only-A.png);
+    width: 137px;
     height: 137px;
 }
 
 .custom .back.pressed, .custom .start.pressed {
     background-position-y: 0px;
-    margin-top: 0px;
 }
 
 .custom .back {
     float: left;
-    width: 138px;
 }
 
 .custom .start {
     float: right;
-    width: 138px;
-    background-position: 98px 0;
 }
 
 .custom .abxy {
