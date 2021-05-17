@@ -1,6 +1,6 @@
 /*BEGIN PS3 Controller Styling*/
 .controller.custom {
-    background: url(low/SNES-Controller-B-low.png);
+    background: url(low/SNES-Controller-A-low.png);
     height: 800px;
     width: 1600px;
         margin-left: -800px;
@@ -8,7 +8,7 @@
 }
 
 .custom.disconnected {
-    background: url(low/SNES-Controller-B-All-low.png);
+    background: url(low/SNES-Controller-A-All-low.png);
 }
 
 .custom.disconnected div {
@@ -16,17 +16,17 @@
 }
 
 .custom .bumper {
-    width:315px;
+    width:336px;
     height: 48px;
     opacity: 0;
 }
 
 .custom .bumpers {
     position: absolute;
-    width: 1046px;
+    width: 1072px;
     height: 48px;
-    left: 284px;
-    top: 63px;
+    left: 272px;
+    top: 64px;
 }
 
 .custom .bumper.pressed {
@@ -45,7 +45,7 @@
 
 .custom .quadrant {
     position: absolute;
-    background: url(low/ps3-assets/player-n-low.png);
+    background: url(low/player-n-low.png);
     height: 72px;
     width: 152px;
     top: 176px;
@@ -71,15 +71,15 @@
 .custom .arrows {
     position: absolute;
     width: 336px;
-    height: 137px;
-    top: 415px;
-    left: 632px;
+    height: 160px;
+    top: 400px;
+    left: 624px;
 }
 
 .custom .back, .custom .start {
     background: url(low/SNES-SelectButton-Only-A-low.png);
-    width: 137px;
-    height: 137px;
+    width: 160px;
+    height: 160px;
     opacity: 0;
 }
 
@@ -106,8 +106,8 @@
 
 .custom .button {
     position: absolute;
-    width: 158px;
-    height: 158px;
+    width: 160px;
+    height: 160px;
     background: url(low/SNES-ABXYButton-Only-A-low.png);
     opacity: 0;
 }
@@ -118,28 +118,28 @@
 
 .custom .a {
     bottom: 0px;
-    left: 157px;
+    left: 160px;
 }
 
 .custom .b {
-    top: 157px;
+    top: 160px;
     right: 0px;
 }
 
 .custom .x {
-    top: 157px;
+    top: 160px;
 }
 
 .custom .y {
-    left: 157px;
+    left: 160px;
 }
 
 .custom .dpad {
     position: absolute;
-    width: 440px;
-    height: 440px;
-    top: 195px;
-    left: 154px;
+    width: 448px;
+    height: 448px;
+    top: 196px;
+    left: 160px;
 }
 
 .custom .face {
@@ -149,37 +149,37 @@
 }
 
 .custom .face.up, .custom .face.down {
-    width: 149px;
-    height: 149px;
+    width: 160px;
+    height: 160px;
 }
 
 .custom .face.left, .custom .face.right {
-    width: 149px;
-    height: 149px;
+    width: 160px;
+    height: 160px;
 }
 
 .custom .face.up {
     top: 0;
-    left: 146px;
-    background-position:298px 0px;
+    left: 160px;
+    background-position:320px 0px;
 }
 
 .custom .face.down {
-    top: 292px;
-    left: 146px;
-    background-position: 149px 0;
+    top: 320px;
+    left: 160px;
+    background-position: 160px 0;
 }
 
 .custom .face.left {
-    top: 146px;
+    top: 160px;
     left: 0;
     background-position: 0px 0;
 }
 
 .custom .face.right {
-    top: 146px;
+    top: 160px;
     right: 0px;
-    background-position: 447px 0;
+    background-position: 480px 0;
 }
 
 .custom .face.pressed {
