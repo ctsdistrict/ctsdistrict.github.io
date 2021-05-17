@@ -145,6 +145,7 @@
 .custom .face {
     background: url(SNES-Dpad-Only-A.png);
     position: absolute;
+    opacity: 0;
 }
 
 .custom .face.up, .custom .face.down {
@@ -158,25 +159,25 @@
 }
 
 .custom .face.up {
-    left: 300px;
+    left: 146px;
     top: 0;
     background-position:298px 0px;
 }
 
 .custom .face.down {
-    left: 300px;
+    left: 146px;
     bottom: 0px;
     background-position: 347px 0;
 }
 
 .custom .face.left {
-    top: 341px;
+    top: 146px;
     left: 0;
     background-position: 0px 0;
 }
 
 .custom .face.right {
-    top: 341px;
+    top: 146px;
     right: 0px;
     background-position: 149px 0;
 }
@@ -184,6 +185,7 @@
 .custom .face.pressed {
     margin-top: 0px;
     background-position-y: 0px;
+    opacity: 1;
 }
 
 .custom.half {
