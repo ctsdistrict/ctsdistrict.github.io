@@ -119,25 +119,21 @@
 }
 
 .custom .a {
-    background-position: 62px 0;
-    top: 142px;
-    left: 71px;
+    bottom: 0px;
+    left: 157px;
 }
 
 .custom .b {
-    background-position: 125px 0;
-    top: 71px;
+    top: 257px;
     right: 0px;
 }
 
 .custom .x {
-    background-position: 0 0;
-    top: 71px;
+    top: 257px;
 }
 
 .custom .y {
-    background-position: -63px 0;
-    left: 71px;
+    left: 157px;
 }
 
 .custom .dpad {
