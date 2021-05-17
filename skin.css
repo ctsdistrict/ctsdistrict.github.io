@@ -159,14 +159,14 @@
 }
 
 .custom .face.up {
-    left: 146px;
     top: 0;
+    left: 146px;
     background-position:298px 0px;
 }
 
 .custom .face.down {
-    left: 146px;
     top: 292px;
+    left: 146px;
     background-position: 347px 0;
 }
 
@@ -178,7 +178,7 @@
 
 .custom .face.right {
     top: 146px;
-    left: 292px;
+    right: 0px;
     background-position: 149px 0;
 }
 
