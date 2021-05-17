@@ -122,12 +122,12 @@
 }
 
 .custom .b {
-    top: 257px;
+    top: 157px;
     right: 0px;
 }
 
 .custom .x {
-    top: 257px;
+    top: 157px;
 }
 
 .custom .y {
@@ -143,47 +143,47 @@
 }
 
 .custom .face {
-    width: 38px;
-    height: 52px;
+    background: url(SNES-Dpad-Only-A.png);
+    position: absolute;
 }
 
 .custom .face.up, .custom .face.down {
-    width: 38px;
-    height: 52px;
+    width: 149px;
+    height: 149px;
 }
 
 .custom .face.left, .custom .face.right {
-    width: 52px;
-    height: 38px;
+    width: 149px;
+    height: 149px;
 }
 
 .custom .face.up {
-    left: 50px;
+    left: 300px;
     top: 0;
-    background-position: 92px 0px;
+    background-position:298px 0px;
 }
 
 .custom .face.down {
-    left: 50px;
-    top: 79px;
-    background-position: 131px 0;
+    left: 300px;
+    bottom: 0px;
+    background-position: 347px 0;
 }
 
 .custom .face.left {
-    top: 47px;
+    top: 341px;
     left: 0;
     background-position: 0px 0;
 }
 
 .custom .face.right {
-    top: 47px;
+    top: 341px;
     right: 0px;
-    background-position: 53px 0;
+    background-position: 149px 0;
 }
 
 .custom .face.pressed {
-    margin-top: 5px;
-    background-position-y: 52px;
+    margin-top: 0px;
+    background-position-y: 0px;
 }
 
 .custom.half {
