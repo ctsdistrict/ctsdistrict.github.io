@@ -108,7 +108,7 @@
     position: absolute;
     width: 158px;
     height: 158px;
-    background: url(SNES-AButton-Only-A.png);
+    background: url(SNES-ABXYButton-Only-A.png);
     opacity: 0;
 }
 
@@ -192,45 +192,3 @@
     margin-top: -400px;
 }
 
-/*END PS3 Controller Styling*/
-
-/*BEGIN PS3 White Controller Styling*/
-.controller.custom.white {
-    background-image: url(ps3-white-assets/base.png);
-}
-
-.custom.white.disconnected {
-    background-image: url(ps3-white-assets/base-disconnect.png);
-}
-
-
-.custom.white .trigger {
-    background-image: url(ps3-white-assets/triggers.png);
-}
-
-
-.custom.white .bumper {
-    background-image: url(ps3-white-assets/bumpers.png);
-}
-
-.custom.white .quadrant {
-    background-image: url(ps3-white-assets/player-n.png);
-}
-
-.custom.white .back, .custom.white .start {
-    background-image: url(ps3-white-assets/menus.png);
-}
-
-.custom.white .button {
-    background-image: url(ps3-white-assets/face-buttons.png);
-}
-
-.custom.white .stick {
-    background-image: url(ps3-white-assets/thumbs.png);
-}
-
-.custom.white .face {
-    background-image: url(ps3-white-assets/dpad.png);
-}
-
-/*END PS3 White Controller Styling*/
