@@ -73,17 +73,19 @@
     width: 336px;
     height: 137px;
     top: 415px;
-    left: 640px;
+    left: 632px;
 }
 
 .custom .back, .custom .start {
     background: url(SNES-SelectButton-Only-A.png);
     width: 137px;
     height: 137px;
+    opacity: 0;
 }
 
 .custom .back.pressed, .custom .start.pressed {
     background-position-y: 0px;
+    opacity: 1;
 }
 
 .custom .back {
